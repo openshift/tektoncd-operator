@@ -1,0 +1,13 @@
+owners:
+  - "@openshift-pipelines"
+
+tasks:
+  - git-clone
+  - golang-test
+
+files:
+  - pipeline.yaml
+  - run.yaml
+
+secrets:
+  - slack-tektoncd-operator-ci-webhook
